@@ -1,0 +1,2177 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a:focus :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+font-size {
+  font-weight: 400;
+}
+.navBar {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 999;
+}
+
+.content {
+  width: 1170px;
+  margin: 0px auto;
+}
+
+.navBar_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-family: Roboto;
+  color: #202020;
+  font-size: 13px;
+  line-height: 15px;
+  height: 70px;
+  position: absolute;
+}
+
+.menuButton {
+  display: none;
+  width: 80px;
+  height: 30px;
+  margin-left: -40%;
+  border: #008139 2px solid;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: #202020;
+  align-items: center;
+}
+.menuButton:hover {
+  border: #008139 3px solid;
+}
+
+.menu {
+  list-style-type: none;
+  width: 427px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 0px;
+  margin-left: 348px;
+  margin-right: 57px;
+}
+.menu li:hover {
+  margin-bottom: -11px;
+  border-bottom: #008139 1px solid;
+}
+
+.mobileMenu {
+  display: block;
+  width: 0%;
+  overflow: hidden;
+  height: 100%;
+  background: black;
+  opacity: 0.95;
+  position: fixed;
+  z-index: 1000;
+  transition: 0.5s;
+}
+.mobileMenu img {
+  margin-left: 85%;
+  margin-top: 15px;
+}
+.mobileMenu img:hover {
+  border: 1px white solid;
+  border-radius: 50%;
+}
+
+.mobileMenu_menu {
+  width: 100%;
+  display: block;
+  color: white;
+  font-size: 15px;
+  line-height: 50px;
+  align-items: center;
+  text-align: center;
+  margin-top: 35px;
+  text-transform: uppercase;
+}
+.mobileMenu_menu li:hover {
+  text-decoration: underline;
+}
+
+.telephone {
+  display: flex;
+  margin-bottom: -30px;
+}
+
+.telephone_numText {
+  min-width: 160px;
+}
+
+.numText_number {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #202020;
+  display: block;
+}
+
+.numText_time {
+  display: block;
+  margin-top: 8px;
+  color: #7D808A;
+}
+
+.invitePage {
+  height: 948px;
+  background: url("Images/invite page/invitePage_leftBush.png") no-repeat 0 90%, url("Images/invite page/invitePage_rightBush.png") no-repeat 100% 90%, url("Images/invite page/invitePage_clouds.png") no-repeat 0 89%, url("Images/invite page/invitePage_leftTrees.png") no-repeat 0 70%, url("Images/invite page/invitePage_smallHorse.png") no-repeat 43% 77%, url("Images/invite page/invitePage_garage.png") no-repeat 23% 80%, url("Images/invite page/invitePage_bigHorse.png") no-repeat 73% 68%, url("Images/invite page/invitePage_birds.png") no-repeat 85% 18%, url("Images/invite page/invitePage_background.png") no-repeat;
+}
+
+h1 {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 57px;
+  line-height: 107%;
+  color: #000000;
+  max-width: 613px;
+  padding-top: 16.5611814346%;
+}
+
+.invitePage_Text {
+  font-family: "Alegreya Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #646464;
+  max-width: 477px;
+  max-height: 68px;
+  margin-top: 40px;
+  margin-left: 45px;
+}
+.invitePage_Text::before {
+  content: "—";
+  height: 1px;
+  width: 26px;
+  margin-left: -45px;
+}
+
+.participate {
+  width: 270px;
+  height: 70px;
+  margin-top: 42px;
+  background: linear-gradient(180deg, #FDE724 0%, #c1a930 100%);
+  border-radius: 5px;
+  color: #6A5300;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 32px;
+  box-shadow: 0 3px #999;
+}
+.participate:hover {
+  background: linear-gradient(180deg, #fde649 0%, #b39a21 100%);
+}
+.participate:active {
+  background: linear-gradient(180deg, #FDE724 0%, #88751a 100%);
+  box-shadow: 0 2px #666;
+  transform: translateY(1px);
+}
+
+h2 {
+  font-family: "Philosopher";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 36px;
+  text-align: center;
+  color: #363434;
+}
+
+.aboutClub_h2 {
+  margin-bottom: 89px;
+}
+
+.aboutClub_content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 185px;
+}
+
+.picture {
+  margin-left: -230px;
+}
+
+.clubInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.clubInfo_text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #7E7E7E;
+  margin-top: 41px;
+}
+
+.clubNumbers {
+  display: flex;
+  flex-wrap: wrap;
+}
+.clubNumbers span {
+  font-family: "Philosopher";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 160%;
+  color: #008139;
+}
+.clubNumbers p {
+  width: 250px;
+  height: 50px;
+  margin-bottom: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  color: #0B0B0B;
+  margin-top: 0px;
+}
+
+h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #363434;
+  margin-top: 25px;
+  margin-bottom: 60px;
+}
+
+.whyChooseUS_content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 200px;
+}
+
+.whyChooseUS_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.whyChooseUS_block span {
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 26px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 22px;
+  text-align: center;
+  color: #0B0B0B;
+}
+.whyChooseUS_block p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 151.7%;
+  text-align: center;
+  color: #7E7E7E;
+  max-width: 271px;
+}
+
+.whyChooseUS_image {
+  width: 160px;
+  height: 125px;
+  align-items: center;
+  text-align: center;
+}
+
+.parkingSign {
+  margin-left: -40px;
+  z-index: -1;
+  position: absolute;
+}
+
+.clubDirections {
+  height: 1498px;
+  text-align: center;
+  overflow: hidden;
+  background: url("Images/clubDirections_grass.png") no-repeat 0% 100%, url("Images/clubDirections_sky.png");
+}
+
+.h3_clubDirections {
+  margin-bottom: 100px;
+}
+
+.blocks {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.clubDirections_blocks {
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.element {
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  margin-bottom: 0px;
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+.clubDirections_element {
+  min-width: 244px;
+  width: 30%;
+}
+.clubDirections_element:nth-child(1), .clubDirections_element:nth-child(3), .clubDirections_element:nth-child(5) {
+  max-height: 399px;
+  align-self: start;
+}
+.clubDirections_element:nth-child(4), .clubDirections_element:nth-child(4), .clubDirections_element:nth-child(5) {
+  align-self: end;
+}
+
+.sub {
+  display: block;
+  max-width: 236px;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 27px;
+  color: #363434;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+
+.caption {
+  margin: 0 auto;
+  margin-bottom: 45px;
+  max-width: 280px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  color: #7E7E7E;
+}
+
+.elementImage {
+  margin-top: -25px;
+}
+
+.line {
+  width: 26px;
+  height: 1px;
+  background: #008139;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.ourVisitiors {
+  max-width: 1920px;
+}
+
+.h2_ourVisitors {
+  margin-top: 152px;
+  margin-bottom: 70px;
+}
+
+.photogalleryContainer {
+  overflow: hidden;
+  max-width: 1920px;
+}
+
+.photogallery {
+  transition: margin-left 0.5s;
+  margin-left: 0px;
+  width: 7680px;
+  height: 605px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: column;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+.photogallery div {
+  background: url("Images/OurVisitors/lupa.png") no-repeat 50% 50%, url("Images/OurVisitors/plus.png") no-repeat 50% 50%, black;
+  background-size: 27px 27px, 8px 8px;
+  border-radius: 2%;
+}
+.photogallery img {
+  transition: 0.5s;
+  width: 384px;
+  height: 300px;
+}
+
+.firstImage {
+  width: 384px;
+}
+
+.slider {
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 150px;
+  max-width: 210px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.next {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(180deg, #9BCFFF 0%, #FFF8B6 0.01%, #FFC700 100%);
+  box-shadow: 0px 1px 0px #C89C00;
+  border-radius: 50%;
+}
+.next:hover {
+  background: linear-gradient(180deg, #9BCFFF 0%, #FFE456 0.01%, #FFB800 100%);
+  box-shadow: 0px 1px 0px #C89C00;
+}
+
+.prev {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(180deg, #9BCFFF 0%, #FFF8B6 0.01%, #FFC700 100%);
+  box-shadow: 0px 1px 0px #C89C00;
+  border-radius: 50%;
+}
+.prev:hover {
+  background: linear-gradient(180deg, #9BCFFF 0%, #FFE456 0.01%, #FFB800 100%);
+  box-shadow: 0px 1px 0px #C89C00;
+}
+
+.slider_progress {
+  width: 96px;
+  height: 8px;
+  background: #EAEAEA;
+  box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.17);
+  border-radius: 10px;
+}
+
+.slider_progress_point {
+  margin-left: 0px;
+  width: 20px;
+  height: 8px;
+  background: linear-gradient(180deg, #9BCFFF 0%, #FFC700 0.01%, #FF9900 100%);
+  border-radius: 10px;
+}
+
+.ourHorses {
+  overflow: hidden;
+  max-width: 1920px;
+}
+
+.ourHorses_h2 {
+  margin-bottom: 95px;
+}
+
+.ourHorses_container {
+  margin-left: 19%;
+  width: 1200px;
+  height: 582px;
+  transition: 0.7s;
+}
+
+.ourHorses_blocks {
+  transition: 0.7s;
+  width: 4800;
+  column-gap: 30px;
+}
+
+.ourHorses_element {
+  min-width: 370px;
+  width: 370px;
+  height: 580px;
+  align-items: center;
+  text-align: center;
+  transition: 0.7s;
+}
+
+.ourHorses_elementImage {
+  height: 421px;
+  width: 320px;
+}
+
+.ourHorses_sub {
+  margin-top: 25px;
+}
+
+.ourHorses_slider {
+  margin-top: 60px;
+  margin-bottom: 140px;
+}
+
+.questions {
+  padding-top: 140px;
+  max-width: 1920px;
+  height: 800px;
+  background: url("Images/Questions/Questions_couds.svg") no-repeat 0% 0%, url("Images/Questions/Questions_couds2.svg") no-repeat 0% 100%, url("Images/Questions/Questions_horse.svg") no-repeat 40% 95%, url("Images/Questions/Questions_back.svg") no-repeat;
+}
+
+.form {
+  width: 470px;
+  height: 547px;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0px 16px 51px rgba(0, 0, 0, 0.11);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  margin-left: 60%;
+}
+
+.form_header {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #363434;
+}
+
+.form_caption {
+  margin: 0 auto;
+  max-width: 370px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  color: #7E7E7E;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.form_inputs {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #A5A5A5;
+}
+
+.nameError {
+  display: block;
+  margin-left: 10%;
+  margin-bottom: 20px;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: left;
+  color: #FF5C00;
+  opacity: 0;
+}
+
+.input_name {
+  width: 330px;
+  height: 61px;
+  padding-left: 20px;
+  background: #FFFFFF;
+  border: 1px solid #8F8F8F;
+  border-radius: 5px;
+}
+.input_name:focus {
+  outline: none;
+}
+.input_name:focus:invalid {
+  border: 1px solid #FF5C00;
+}
+.input_name:focus:invalid ~ .nameError {
+  opacity: 1;
+}
+
+.telError {
+  display: block;
+  margin-left: 10%;
+  margin-bottom: 20px;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: left;
+  color: #FF5C00;
+  opacity: 0;
+}
+
+.input_tel {
+  width: 330px;
+  height: 61px;
+  padding-left: 20px;
+  background: #FFFFFF;
+  border: 1px solid #8F8F8F;
+  border-radius: 5px;
+}
+.input_tel:focus {
+  outline: none;
+}
+.input_tel:focus:invalid {
+  border: 1px solid #FF5C00;
+}
+.input_tel:focus:invalid ~ .telError {
+  opacity: 1;
+}
+
+.questions_paricipate {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  width: 330px;
+}
+
+.acception {
+  width: 330px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+.acception_box {
+  opacity: 1;
+}
+.acception_box:checked:before {
+  content: " ";
+  background-image: url("Images/Questions/Screenshot 2022-08-07 at 17.29.01.png");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  position: absolute;
+  margin-left: -5px;
+  width: 50px;
+  height: 50px;
+}
+.acception_box:not(:checked):before {
+  content: url("Images/Questions/Questions_unchecked.svg");
+}
+.acception_box:not(:checked):after {
+  content: "Подтвердите согласие";
+  margin-top: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #FF5C00;
+  width: 200px;
+}
+
+.acception_text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #8A8A8A;
+  margin-left: 10px;
+}
+.acception_text a {
+  text-decoration: underline;
+}
+
+.reveiws {
+  overflow: hidden;
+  max-width: 1920px;
+}
+
+.reviews_h2 {
+  margin-top: 121px;
+  margin-bottom: 70px;
+}
+
+.reviews_container {
+  margin-left: 19%;
+  width: 1200px;
+  height: 293px;
+  transition: 0.7s;
+}
+
+.reviews_blocks {
+  transition: 0.7s;
+  width: 7200;
+  column-gap: 30px;
+}
+
+.reviews_element {
+  min-width: 570px;
+  width: 570px;
+  height: 291px;
+  align-items: center;
+  text-align: center;
+  transition: 0.7s;
+}
+
+.reviews_caption {
+  max-width: 480px;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.reviews_more {
+  width: 150px;
+  height: 35px;
+  margin-top: 15px;
+  margin-bottom: 45px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  text-align: center;
+  color: #008139;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+}
+.reviews_more:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.reviews_person {
+  margin: 0 auto;
+  height: 50px;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.personInfo {
+  width: 60%;
+  display: flex;
+  justify-content: start;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.nameLinks {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #101820;
+}
+
+.links {
+  width: 46px;
+  display: flex;
+  justify-content: space-between;
+}
+.links img {
+  width: 18px;
+  height: 18px;
+}
+
+.contactsMap {
+  max-width: 1920px;
+  height: 650px;
+  padding-top: 70px;
+  background: url("Images/CantactsMap/ContactsMap_leftBush.png") no-repeat 0% 135%, url("Images/CantactsMap/ContactsMap_rightBush.png") no-repeat 100% -500%, url("Images/CantactsMap/ContactsMap_location.png") no-repeat 65% 55%, url("Images/CantactsMap/ContactsMap_background.png") no-repeat 50% 50%;
+}
+
+.contacts {
+  margin-left: 19.5%;
+  width: 521px;
+  height: 511px;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0px 16px 51px rgba(0, 0, 0, 0.11);
+  border-radius: 5px;
+}
+
+.contacts_h2 {
+  text-align: left;
+}
+
+.contacts_line {
+  margin-left: 0;
+  text-align: left;
+}
+
+.contacts_content {
+  width: 72%;
+  height: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 70px;
+  text-align: left;
+}
+.contacts_content p {
+  padding-left: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #363434;
+  margin-top: 26px;
+}
+
+.contacts_p1 {
+  background: url("Images/CantactsMap/ContactsMap_locationIcon.png") no-repeat 0% 0%;
+}
+
+.contacts_p2 {
+  background: url("Images/CantactsMap/ContactsMap_tel.png") no-repeat 0% 0%;
+}
+
+.contacts_p3 {
+  background: url("Images/CantactsMap/ContactsMap_mail.png") no-repeat 0% 0%;
+}
+
+.contacts_p4 {
+  background: url("Images/CantactsMap/ContactsMap_time.png") no-repeat 0% 0%;
+}
+
+.contacts_links {
+  width: 100%;
+  margin-top: 30px;
+  display: block;
+  text-align: right;
+}
+.contacts_links img {
+  margin-left: 13px;
+  width: 32px;
+  height: 32px;
+}
+
+.footer {
+  max-width: 1920px;
+  height: 138px;
+  background-color: black;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.logoMunuButton {
+  height: 70%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+
+.logoMenu {
+  width: 70%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.footer_logo {
+  width: 159px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.footer_menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 364px;
+  line-height: 15px;
+  text-align: right;
+  align-items: center;
+}
+.footer_menu a {
+  color: #EAEAEA;
+}
+.footer_menu a:hover {
+  text-decoration: underline;
+}
+
+.footer_button {
+  background-color: black;
+  width: 201px;
+  height: 46px;
+  border: 1px solid #FDE724;
+  border-radius: 5px;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #F5F5F5;
+}
+
+.footer_politics {
+  width: 545px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: 13px;
+  line-height: 15px;
+  text-decoration-line: underline;
+}
+.footer_politics a {
+  color: #7D808A;
+}
+
+@media (max-width: 1175px) {
+  .content {
+    width: 95%;
+  }
+  .menu {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .invitePage {
+    height: 693px;
+    background: url("Images/invite page/invitePage_leftBush.png") no-repeat 0 90%, url("Images/invite page/invitePage_rightBush.png") no-repeat 100% 90%, url("Images/invite page/invitePage_clouds.png") no-repeat 0 89%, url("Images/invite page/invitePage_leftTrees.png") no-repeat 0 70%, url("Images/invite page/invitePage_smallHorse.png") no-repeat 50% 77%, url("Images/invite page/invitePage_garage.png") no-repeat 23% 80%, url("Images/invite page/invitePage_bigHorse.png") no-repeat 88% 68%, url("Images/invite page/invitePage_birds.png") no-repeat 85% 18%, url("Images/invite page/invitePage_background.png") no-repeat;
+    background-size: 10%, 7%, 100%, 25%, 15%, 30%, 40%, 20%, auto 100%;
+  }
+  h1 {
+    font-size: 47px;
+    padding-top: 8.9466089466%;
+    max-width: 506px;
+  }
+  .invitePage_Text {
+    font-size: 20px;
+    margin-top: 30px;
+    max-width: 397px;
+  }
+  .participate {
+    width: 220px;
+    height: 60px;
+    margin-top: 38px;
+    font-size: 13px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  .aboutClub_content {
+    margin-bottom: 61px;
+  }
+  .picture {
+    width: 40%;
+    margin-top: -30px;
+  }
+  .picture img {
+    width: 140%;
+    height: 70%;
+    margin-left: 30%;
+  }
+  .clubInfo {
+    width: 56%;
+    display: inline;
+  }
+  .clubInfo_text {
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: -75%;
+  }
+  .clubNumbers {
+    flex-wrap: wrap;
+  }
+  .clubNumbers div {
+    max-width: 45%;
+  }
+  .clubNumbers span {
+    font-size: 32px;
+    max-width: 50%;
+  }
+  .clubNumbers p {
+    font-size: 15px;
+    max-width: 90%;
+  }
+  h3 {
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 10px;
+  }
+  .whyChooseUS_content {
+    padding-bottom: 140px;
+  }
+  .whyChooseUS_block span {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .whyChooseUS_block p {
+    font-size: 13px;
+    line-height: 20px;
+    width: 90%;
+  }
+  .clubDirections {
+    height: 1250px;
+  }
+  .h3_clubDirections {
+    margin-bottom: 80px;
+  }
+  .element {
+    margin-bottom: 30px;
+  }
+  .elementImage {
+    max-width: 230px;
+    max-height: 180px;
+  }
+  .sub {
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 25px;
+  }
+  .caption {
+    max-width: 250px;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 32px;
+  }
+  .line {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .ourVisitiors {
+    max-width: 1175px;
+  }
+  .h2_ourVisitors {
+    margin-top: 107px;
+    margin-bottom: 40px;
+  }
+  .photogalleryContainer {
+    max-width: 1175px;
+  }
+  .photogallery {
+    width: 5875px;
+    height: 379px;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+  }
+  .photogallery img {
+    width: 293.75px;
+    height: 188px;
+  }
+  .firstImage {
+    width: 293.75px;
+  }
+  .slider {
+    margin-bottom: 120px;
+  }
+  .ourHorses {
+    max-width: 1175px;
+  }
+  .ourHorses_h2 {
+    margin-bottom: 65px;
+  }
+  .ourHorses_container {
+    margin-left: 20px;
+    width: 646px;
+    height: 450px;
+  }
+  .ourHorses_blocks {
+    width: 3876;
+    column-gap: 30px;
+  }
+  .ourHorses_element {
+    min-width: 293px;
+    width: 293px;
+    height: 448px;
+  }
+  .ourHorses_elementImage {
+    max-height: 320px;
+    max-width: 243px;
+  }
+  .ourHorses_sub {
+    margin-top: 20px;
+  }
+  .ourHorses_slider {
+    margin-top: 40px;
+  }
+  .questions {
+    padding-top: 140px;
+    max-width: 1175px;
+    height: 800px;
+    background: url("Images/Questions/Questions_couds.svg") no-repeat 0% 0%, url("Images/Questions/Questions_couds2.svg") no-repeat 0% 100%, url("Images/Questions/Questions_horse.svg") no-repeat 45% 95%, url("Images/Questions/Questions_back.svg") no-repeat;
+  }
+  .form {
+    width: 45%;
+    height: 547px;
+    margin-left: 50%;
+  }
+  .form_caption {
+    max-width: 80%;
+  }
+  .form_inputs {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #A5A5A5;
+  }
+  .questions_paricipate {
+    margin-top: 0px;
+    width: 330px;
+  }
+  .reveiws {
+    max-width: 1175px;
+  }
+  .reviews_h2 {
+    margin-bottom: 40px;
+  }
+  .reviews_container {
+    margin-left: 20px;
+    width: 940px;
+    height: 262px;
+  }
+  .reviews_blocks {
+    transition: 0.7s;
+    width: 5640;
+  }
+  .reviews_element {
+    min-width: 440px;
+    width: 440px;
+    height: 260px;
+  }
+  .reviews_caption {
+    max-width: 380px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .reviews_more {
+    width: 130px;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 34px;
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .reviews_person {
+    margin: 0 auto;
+    height: 50px;
+    width: 85%;
+  }
+  .personInfo {
+    width: 60%;
+  }
+  .nameLinks {
+    margin-left: 10px;
+  }
+  .name {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .contactsMap {
+    max-width: 1175px;
+    height: 650px;
+    padding-top: 70px;
+    background: url("Images/CantactsMap/ContactsMap_location.png") no-repeat 65% 55%, url("Images/CantactsMap/ContactsMap_background.png") no-repeat 50% 50%;
+  }
+  .contacts {
+    margin-left: 20px;
+    width: 500px;
+    height: 500px;
+  }
+  .contacts_line {
+    margin-left: 0;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .contacts_content {
+    width: 72%;
+    height: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    text-align: left;
+  }
+  .contacts_content p {
+    padding-left: 40px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 26px;
+  }
+}
+@media (max-width: 768px) {
+  .menu {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .numText_number {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .numText_time {
+    font-size: 11px;
+    line-height: 13px;
+    text-align: right;
+  }
+  .invitePage {
+    height: 539px;
+    background: url("Images/invite page/invitePage_leftBush.png") no-repeat 0 90%, url("Images/invite page/invitePage_rightBush.png") no-repeat 100% 90%, url("Images/invite page/invitePage_clouds.png") no-repeat 0 89%, url("Images/invite page/invitePage_leftTrees.png") no-repeat 0 70%, url("Images/invite page/invitePage_smallHorse.png") no-repeat 50% 77%, url("Images/invite page/invitePage_garage.png") no-repeat 23% 80%, url("Images/invite page/invitePage_bigHorse.png") no-repeat 88% 68%, url("Images/invite page/invitePage_birds.png") no-repeat 85% 18%, url("Images/invite page/invitePage_background.png") no-repeat;
+    background-size: 10%, 7%, 100%, 25%, 15%, 30%, 40%, 20%, auto 100%;
+  }
+  h1 {
+    max-width: 400px;
+    font-size: 37px;
+    line-height: 41px;
+    padding-top: 11.5027829314%;
+  }
+  .invitePage_Text {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 20px;
+  }
+  .participate {
+    width: 180px;
+    height: 45px;
+    margin-top: 20px;
+    font-size: 11px;
+  }
+  h2 {
+    font-size: 27px;
+    line-height: 27px;
+  }
+  .picture {
+    width: 43%;
+    margin-top: -30px;
+  }
+  .picture img {
+    width: 140%;
+    height: 70%;
+    margin-left: 70%;
+  }
+  .clubInfo {
+    width: 50%;
+  }
+  .clubInfo_text {
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: -90%;
+  }
+  .clubNumbers div {
+    max-width: 48%;
+  }
+  .clubNumbers p {
+    font-size: 13px;
+    line-height: 160%;
+  }
+  .whyChooseUS_content {
+    padding-bottom: 140px;
+  }
+  .whyChooseUS_block span {
+    max-width: 150px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .whyChooseUS_block p {
+    max-width: 180px;
+    font-size: 13px;
+    line-height: 20px;
+    width: 90%;
+  }
+  .whyChooseUS_block:nth-child(2) span {
+    max-width: 100px;
+  }
+  .clubDirections {
+    height: 1400px;
+  }
+  .h3_clubDirections {
+    margin-bottom: 75px;
+  }
+  .element {
+    width: 48%;
+    margin-bottom: 45px;
+    height: 300px;
+    align-items: start;
+  }
+  .elementImage {
+    max-width: 300px;
+    max-height: 180px;
+  }
+  .sub {
+    margin-top: 20px;
+  }
+  .caption {
+    max-width: 300px;
+    margin-bottom: 42px;
+  }
+  .line {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .ourVisitiors {
+    max-width: 768px;
+  }
+  .h2_ourVisitors {
+    margin-top: 35px;
+  }
+  .photogalleryContainer {
+    max-width: 768px;
+  }
+  .photogallery {
+    width: 3840px;
+    height: 312px;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+  }
+  .photogallery img {
+    width: 192px;
+    height: 155px;
+  }
+  .firstImage {
+    width: 192px;
+  }
+  .slider {
+    margin-top: 40px;
+    margin-bottom: 89px;
+  }
+  .ourHorses {
+    max-width: 768px;
+  }
+  .ourHorses_container {
+    margin-left: 20px;
+    width: 560px;
+    height: 365px;
+  }
+  .ourHorses_blocks {
+    width: 3360;
+    column-gap: 30px;
+  }
+  .ourHorses_element {
+    min-width: 250px;
+    width: 250px;
+    height: 360px;
+  }
+  .ourHorses_elementImage {
+    margin-top: -20px;
+    max-height: 252px;
+    max-width: 210px;
+  }
+  .ourHorses_sub {
+    margin-top: 15px;
+  }
+  .questions {
+    padding-top: 103px;
+    max-width: 768px;
+    height: 1107px;
+    background: url("Images/Questions/Questions_couds.svg") no-repeat 0% 0%, url("Images/Questions/Questions_couds2.svg") no-repeat 0% 100%, url("Images/Questions/Questions_horse.svg") no-repeat -50% 100%, url("Images/Questions/Questions_back.svg") no-repeat 30% 100%;
+    background-size: 100%, 100%, 125%, auto 100%;
+  }
+  .form {
+    width: 450px;
+    height: 510px;
+    margin: 0 auto;
+  }
+  .form_caption {
+    max-width: 370px;
+    font-size: 13px;
+  }
+  .form_inputs {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #A5A5A5;
+  }
+  .input_name {
+    width: 300px;
+    height: 55px;
+  }
+  .input_tel {
+    width: 300px;
+    height: 55px;
+  }
+  .questions_paricipate {
+    margin-top: 0px;
+    width: 300px;
+    height: 64px;
+  }
+  .reveiws {
+    max-width: 768px;
+  }
+  .reviews_h2 {
+    margin-bottom: 40px;
+  }
+  .reviews_container {
+    margin-left: 20px;
+    width: 768px;
+    height: 262px;
+  }
+  .reviews_blocks {
+    width: 4608;
+  }
+  .reviews_element {
+    min-width: 354px;
+    width: 354px;
+    height: 260px;
+  }
+  .reviews_caption {
+    max-width: 314px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .commas {
+    width: 30px;
+    height: 25px;
+  }
+  .contactsMap {
+    max-width: 768px;
+    height: 510px;
+    padding-top: 50px;
+    background: url("Images/CantactsMap/ContactsMap_location.png") no-repeat 65% 55%, url("Images/CantactsMap/ContactsMap_background.png") no-repeat 50% 50%;
+  }
+  .contacts {
+    margin-left: 20px;
+    width: 354px;
+    height: 410px;
+  }
+  .contacts_line {
+    margin-left: 0;
+    margin-bottom: 24px;
+    margin-top: 20px;
+    text-align: left;
+  }
+  .contacts_content {
+    width: 80%;
+    height: 80%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+  }
+  .contacts_content p {
+    padding-left: 40px;
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 10px;
+  }
+  .contacts_links {
+    margin-top: 40px;
+  }
+  .footer {
+    max-width: 768px;
+    height: 135px;
+  }
+  .logoMunuButton {
+    height: 70%;
+    padding-top: 25px;
+    margin-bottom: 20px;
+  }
+  .footer_logo {
+    margin-top: -5px;
+    width: 99px;
+  }
+  .footer_logo img:first-child {
+    width: 28px;
+    height: 39px;
+  }
+  .footer_logo img:last-child {
+    width: 71px;
+    height: 29px;
+  }
+  .footer_menu {
+    width: 364px;
+    line-height: 15px;
+  }
+  .footer_button {
+    width: 167px;
+    height: 46px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .footer_politics {
+    width: 365px;
+    font-size: 9px;
+    line-height: 11px;
+  }
+}
+@media (max-width: 690px) {
+  .logo img {
+    width: 90px;
+    height: 30px;
+  }
+  .menu {
+    display: none;
+  }
+  .menuButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: none;
+    margin-left: -25%;
+  }
+  .telephone {
+    margin-bottom: -10px;
+  }
+  .telephone img {
+    max-width: 10px;
+    max-height: 10px;
+    margin-right: -60px;
+  }
+  .numText_number {
+    font-size: 11px;
+    line-height: 13px;
+    text-align: right;
+  }
+  .numText_time {
+    font-size: 9px;
+    line-height: 11px;
+  }
+  .content {
+    align-items: center;
+    text-align: center;
+  }
+  .invitePage {
+    height: 564px;
+    background: url("Images/invite page/invitePage_leftBush.png") no-repeat 0 90%, url("Images/invite page/invitePage_rightBush.png") no-repeat 100% 90%, url("Images/invite page/invitePage_clouds.png") no-repeat 0 89%, url("Images/invite page/invitePage_leftTrees.png") no-repeat 0 78%, url("Images/invite page/invitePage_smallHorse.png") no-repeat 50% 80%, url("Images/invite page/invitePage_garage.png") no-repeat 23% 77%, url("Images/invite page/invitePage_bigHorse.png") no-repeat 88% 75%, url("Images/invite page/invitePage_birds.png") no-repeat 15% 18%, url("Images/invite page/invitePage_background.png") no-repeat;
+    background-size: 8%, 5%, 100% 17%, 25%, 15%, 25%, 30%, 20%, auto 100%;
+  }
+  h1 {
+    margin: auto auto;
+    padding-top: 150px;
+    font-size: 33px;
+    line-height: 37px;
+  }
+  .invitePage_Text {
+    margin: auto auto;
+    margin-top: 26px;
+    max-width: 350px;
+    max-height: 45px;
+  }
+  .invitePage_Text::before {
+    content: "";
+    height: 0px;
+    width: 0px;
+    margin-left: 0px;
+  }
+  .participate {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .picture {
+    display: none;
+  }
+  .aboutClub_h2 {
+    margin-bottom: 40px;
+  }
+  .clubInfo {
+    width: 100%;
+  }
+  .clubInfo_text {
+    margin-left: 0%;
+    margin-top: 0px;
+    text-align: left;
+  }
+  .clubNumbers {
+    justify-content: center;
+  }
+  .clubNumbers p {
+    width: 240px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  h3 {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .whyChooseUS_content {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .whyChooseUS_block {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 30px;
+  }
+  .whyChooseUS_block span {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .whyChooseUS_block p {
+    max-width: 217px;
+    width: 100%;
+  }
+  .whyChooseUS_block:nth-child(2) span {
+    max-width: 200px;
+  }
+  .clubDirections {
+    height: 1250px;
+  }
+  .h3_clubDirections {
+    margin-bottom: 60px;
+  }
+  .element {
+    min-width: 180px;
+    margin-bottom: 30px;
+  }
+  .elementImage {
+    max-width: 180px;
+    max-height: 130px;
+  }
+  .sub {
+    font-size: 13px;
+    line-height: 25px;
+    margin-top: 15px;
+  }
+  .caption {
+    text-align: left;
+    max-width: 205px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .line {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .ourVisitiors {
+    max-width: 690px;
+  }
+  .h2_ourVisitors {
+    margin-top: 63px;
+  }
+  .photogalleryContainer {
+    max-width: 690px;
+    height: 483px;
+  }
+  .photogallery {
+    width: 2070px;
+    height: 483px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+  }
+  .photogallery img {
+    width: 230.046px;
+    height: 120px;
+  }
+  .firstImage {
+    width: 230.046px;
+  }
+  .slider {
+    margin-top: 30px;
+  }
+  .ourHorses {
+    max-width: 690px;
+  }
+  .ourHorses_container {
+    margin-left: 11px;
+    width: 498px;
+    height: 332px;
+  }
+  .ourHorses_blocks {
+    width: 2988;
+    column-gap: 30px;
+  }
+  .ourHorses_element {
+    min-width: 219px;
+    width: 219px;
+    height: 320px;
+  }
+  .ourHorses_elementImage {
+    margin-top: -20px;
+    max-height: 225px;
+    max-width: 189px;
+  }
+  .ourHorses_caption {
+    text-align: center;
+  }
+  .ourHorses_slider {
+    margin-bottom: 61px;
+  }
+  .questions {
+    padding-top: 103px;
+    max-width: 690px;
+    height: 1061px;
+    background: url("Images/Questions/Questions_couds.svg") no-repeat 0% 0%, url("Images/Questions/Questions_couds2.svg") no-repeat 0% 100%, url("Images/Questions/Questions_horse.svg") no-repeat -50% 100%, url("Images/Questions/Questions_back.svg") no-repeat 30% 100%;
+    background-size: 100%, 100%, 135%, auto 100%;
+  }
+  .form {
+    width: 90%;
+    height: 510px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  .form_header {
+    font-size: 27px;
+    line-height: 35px;
+  }
+  .form_caption {
+    max-width: 370px;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  .form_inputs {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .input_name {
+    width: 300px;
+    height: 55px;
+  }
+  .input_tel {
+    width: 300px;
+    height: 55px;
+  }
+  .questions_paricipate {
+    margin-top: 0px;
+    width: 300px;
+    height: 64px;
+  }
+  .reveiws {
+    max-width: 690px;
+  }
+  .reviews_h2 {
+    margin-bottom: 40px;
+  }
+  .reviews_container {
+    margin-left: 20px;
+    width: 384px;
+    height: 262px;
+  }
+  .reviews_blocks {
+    width: 4608;
+  }
+  .reviews_element {
+    min-width: 354px;
+    width: 354px;
+    height: 260px;
+  }
+  .reviews_caption {
+    max-width: 314px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .commas {
+    width: 30px;
+    height: 25px;
+  }
+  .contactsMap {
+    max-width: 690px;
+    height: 786px;
+    padding-top: 319px;
+    background: url("Images/CantactsMap/ContactsMap_location.png") no-repeat 65% 55%, url("Images/CantactsMap/ContactsMap_background.png") no-repeat;
+    background-size: 10%, 768px 510px;
+  }
+  .contacts {
+    margin: 0 auto;
+    width: 354px;
+    height: 410px;
+  }
+  .contacts_h2 {
+    text-align: left;
+  }
+  .contacts_line {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-left: 0;
+    text-align: left;
+  }
+  .contacts_content {
+    width: 74%;
+    height: 80%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    text-align: left;
+  }
+  .contacts_content p {
+    padding-left: 40px;
+    margin-top: 10px;
+  }
+  .contacts_links {
+    width: 100%;
+    margin-top: 50px;
+    display: block;
+    text-align: right;
+  }
+  .footer {
+    max-width: 690px;
+    height: 390px;
+  }
+  .logoMunuButton {
+    display: block;
+    height: 70%;
+  }
+  .logoMenu {
+    display: block;
+    width: 100%;
+  }
+  .footer_logo {
+    margin: 0 auto;
+    margin-top: -5px;
+    width: 99px;
+  }
+  .footer_logo img:first-child {
+    width: 28px;
+    height: 30px;
+  }
+  .footer_logo img:last-child {
+    width: 71px;
+    height: 29px;
+  }
+  .footer_menu {
+    width: 100%;
+    line-height: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .footer_politics {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 209px;
+    height: 32px;
+    font-size: 9px;
+    line-height: 11px;
+  }
+}
+@media (max-width: 400px) {
+  .menuButton {
+    margin-left: 0px;
+  }
+  .telephone {
+    display: none;
+  }
+  h1 {
+    font-size: 24px;
+    line-height: 27px;
+  }
+  .invitePage_Text {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .participate {
+    width: 170px;
+    height: 43px;
+  }
+  .invitePage {
+    background: url("Images/invite page/invitePage_leftBush.png") no-repeat 0 90%, url("Images/invite page/invitePage_rightBush.png") no-repeat 100% 90%, url("Images/invite page/invitePage_clouds.png") no-repeat 0 89%, url("Images/invite page/invitePage_leftTrees.png") no-repeat -10% 78%, url("Images/invite page/invitePage_smallHorse.png") no-repeat 50% 80%, url("Images/invite page/invitePage_garage.png") no-repeat 7% 78%, url("Images/invite page/invitePage_bigHorse.png") no-repeat 68% 82%, url("Images/invite page/invitePage_birds.png") no-repeat 15% 18%, url("Images/invite page/invitePage_background.png") no-repeat;
+    background-size: 12%, 9%, 100% 12%, 30%, 0%, 45%, 40%, 20%, auto 100%;
+  }
+  h2 {
+    font-size: 21px;
+    line-height: 21px;
+  }
+  .clubNumbers {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  .clubNumbers div {
+    max-width: 100%;
+  }
+  .clubNumbers p {
+    margin: 0 auto;
+    width: 250px;
+  }
+  .whyChooseUS_block {
+    width: 100%;
+  }
+  .whyChooseUS_block span {
+    max-width: 100%;
+    margin-top: 8px;
+  }
+  .whyChooseUS_block p {
+    max-width: 80%;
+  }
+  .clubDirections {
+    background: url("Images/clubDirections_grass.png") no-repeat 0% 100%, url("Images/clubDirections_sky.png") no-repeat 0% 100%;
+    height: 2500px;
+  }
+  .h3_clubDirections {
+    margin-bottom: 60px;
+  }
+  .element {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 60px;
+  }
+  .elementImage {
+    max-width: 250px;
+    max-height: 150px;
+  }
+  .sub {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .caption {
+    text-align: center;
+    max-width: 275px;
+  }
+  .ourVisitiors {
+    max-width: 400px;
+  }
+  .h2_ourVisitors {
+    margin-top: 70px;
+  }
+  .photogalleryContainer {
+    max-width: 400px;
+    height: 483px;
+  }
+  .photogallery {
+    width: 2000px;
+    height: 483px;
+  }
+  .photogallery img {
+    width: 196px;
+    height: 120px;
+  }
+  .firstImage {
+    width: 196px;
+  }
+  .slider {
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+  .ourHorses {
+    max-width: 400px;
+  }
+  .ourHorses_container {
+    margin-left: 10%;
+    width: 290px;
+    height: 392px;
+  }
+  .ourHorses_blocks {
+    width: 3480;
+    column-gap: 30px;
+  }
+  .ourHorses_element {
+    min-width: 260px;
+    width: 260px;
+    height: 390px;
+  }
+  .ourHorses_elementImage {
+    margin-top: -20px;
+    max-height: 290px;
+    max-width: 230px;
+  }
+  .ourHorses_sub {
+    margin-top: 19px;
+  }
+  .questions {
+    padding-top: 99px;
+    max-width: 400px;
+    height: 813px;
+    background: url("Images/Questions/Questions_couds.svg") no-repeat 0% 0%, url("Images/Questions/Questions_couds2.svg") no-repeat 0% 100%, url("Images/Questions/Questions_horse.svg") no-repeat -30% 100%, url("Images/Questions/Questions_back.svg") no-repeat 30% 100%;
+    background-size: 100%, 100%, 145%, auto 100%;
+  }
+  .form {
+    width: 85%;
+    height: 425px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  .form_header {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .form_caption {
+    max-width: 278px;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .form_inputs {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .nameError {
+    padding-left: 15%;
+    margin-bottom: 7px;
+  }
+  .input_name {
+    width: 225px;
+    height: 50px;
+    padding-left: 14px;
+  }
+  .telError {
+    padding-left: 15%;
+    margin-bottom: 7px;
+  }
+  .input_tel {
+    width: 225px;
+    height: 50px;
+    padding-left: 14px;
+  }
+  .questions_paricipate {
+    margin-top: 0px;
+    width: 225px;
+    height: 45px;
+  }
+  .acception {
+    margin-left: 50px;
+  }
+  .acception_text {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .reveiws {
+    max-width: 400px;
+  }
+  .reviews_h2 {
+    margin-bottom: 30px;
+  }
+  .reviews_container {
+    margin-left: 10%;
+    width: 330px;
+    height: 265px;
+  }
+  .reviews_blocks {
+    width: 3960;
+  }
+  .reviews_element {
+    min-width: 300px;
+    width: 300px;
+    height: 263px;
+  }
+  .reviews_caption {
+    max-width: 270px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .contactsMap {
+    max-width: 400px;
+    height: 748px;
+    padding-top: 319px;
+    background: url("Images/CantactsMap/ContactsMap_location.png") no-repeat 50% 20%, url("Images/CantactsMap/ContactsMap_background.png") no-repeat 0 0;
+    background-size: 10%, auto auto;
+  }
+  .contacts {
+    margin: 0 auto;
+    width: 300px;
+    height: 359px;
+    text-align: center;
+  }
+  .contacts_h2 {
+    text-align: center;
+  }
+  .contacts_line {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .contacts_content {
+    width: 70%;
+    height: 80%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .contacts_content p {
+    font-size: 13px;
+    line-height: 25px;
+    padding-left: 40px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  .contacts_content p img {
+    height: 13px;
+    width: 13px;
+  }
+  .contacts_links {
+    width: 100%;
+    margin-top: 25px;
+    display: block;
+    text-align: center;
+  }
+  .footer_menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+    line-height: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
